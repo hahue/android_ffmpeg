@@ -1,0 +1,41 @@
+ffplay http://213.94.80.174/live/UN/iphone/3live.m3u8?live
+
+ffmpeg -i http://213.94.80.174/live/UN/iphone/3live.m3u8?live -r 15 /sdcard/videokit/out.mp4 
+
+ffmpeg -i http://devimages.apple.com/iphone/samples/bipbop/biopall.m3u8 out.mp4
+
+ffmpeg -i http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8 out.mp4
+
+ffplay http://devimages.apple.com/iphone/samples/bipbopipbopall.m3u8
+
+ffmpeg -i http://devimages.apple.com/iphone/samples/bipbopipbopall.m3u8 out.mp4
+
+ffmpeg -i http://213.94.80.174/live/UN/iphone/3live.m3u8?live out.mp4
+./ffmpeg -strict -2 -i http://213.94.80.174/live/UN/iphone/3live.m3u8?live -strict -2 out.mp4
+./ffmpeg -strict -2 -i http://213.94.80.174/3live_low/3live_low_100000.m3u8?&token=SPAZUZbgVh+aMmQ0jRspPepe9gvrGvdrF314H5Ja4EiEdAbIGuU5z5IPT1duEinmB9eYEgs2mCIOyz7DbOFTfgdi0bjZZ8ICsT4toJIB3W8k7/PA/pEpOTgRx/3qB6pDF4nHe//ScIBq3ImLjCYo1q9QrHz0Qt0TtlnVaFycP+Q=  -strict -2 out.mp4
+
+ffmpeg -i http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8 out.mp4
+
+
+./ffmpeg -strict -2 -i http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8 -strict -2 out.mp4
+./ffmpeg -i http://qthttp.apple.com.edgesuite.net/1010qwoeiuryfg/sl.m3u8 out.mp4
+
+./ffmpeg -strict -2 -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_3mb_hls_mob.3mb.m3u8?vod -strict -2 out.mp4
+./ffmpeg -strict -2 -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_pd_mbhigh.mp4?vod -strict -2 out.mp4
+./ffmpeg -strict -2 -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_pd_8mb_ac3.mp4?vod -strict -2 out.mp4
+
+./ffmpeg -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_3mb_hls_mob.3mb.m3u8?vod out.mp4
+./ffmpeg -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_pd_mbhigh.mp4?vod out.mp4
+
+
+
+export LD_LIBRARY_PATH=/data/local/tmp/lib:$LD_LIBRARY_PATH
+
+export LD_LIBRARY_PATH=/data/local/tmp/android_2/arm/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/data/local/tmp/androidffmpeg2/arm/lib:$LD_LIBRARY_PATH
+
+
+
+./ffmpeg -strict -2 -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_3mb_hls_mob.3mb.m3u8?vod -strict -2 -b:v 256k -bufsize 256k -s vga /sdcard/test13.mp4
+
+./ffmpeg -strict -2 -i http://213.94.82.170/vodsit1/rmd-content/UN/FREE/Stefan/tfaHD_D_3mb_hls_mob.3mb.m3u8?vod -vf "movie=logo.png [wm]; [in][wm] overlay=main_w-overlay_w-10:10 [out]" -strict -2 -b:v 256k -bufsize 256k /sdcard/test14.mp4
