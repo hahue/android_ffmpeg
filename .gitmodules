@@ -1,0 +1,12 @@
+[submodule "ffmpeg"]
+	path = ffmpeg
+	url = https://github.com/FFmpeg/FFmpeg
+[submodule "x264"]
+	path = x264
+	url = http://git.videolan.org/git/x264.git
+[submodule "freetype2"]
+	path = freetype2
+	url = http://git.savannah.gnu.org/r/freetype/freetype2.git
+[submodule "sox"]
+	path = sox
+	url = http://git.code.sf.net/p/sox/code
